@@ -1,0 +1,74 @@
+.main-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.main-heading{
+    text-align: center;
+}
+
+.table-div{
+    
+min-height: 40vh ;
+height: auto;
+margin-bottom: 5vh;
+width: 100%;
+background-color: whitesmoke;
+padding:  2vh;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+  
+    text-align: left;
+  }
+
+  th{
+      color: black;
+      font-weight: 700;
+      border-bottom: 0.5px solid gray;
+  }
+
+tr{
+    border-bottom: 1px solid gray;
+    /* border-top: 1px solid gray; */
+    padding: 5px 3px;
+}
+
+td{
+    padding: 5px;
+}
+
+  .input-box{
+      padding: 10px 20px;
+      margin-left: 2vh;
+     
+  }
+
+  .input-div{
+      display: flex;
+      justify-content: space-around;
+      background-color: #0080801f;
+    min-height: 2vh;
+  }
+
+
+ .form{
+    padding-bottom: 2vh;
+     align-items: center;
+     padding-top: 2vh;
+ }
+
+ label{
+     margin-left: 10px;
+     margin-right: 10px;
+
+ }
+
+ .cta{
+     font-size: 18px;
+ }

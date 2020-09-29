@@ -1,0 +1,148 @@
+nav {
+    display: flex;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    align-items: center;
+    height: 10vh;
+    animation-name: animation-opcaity ;
+    animation-duration: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 0.1s;
+    font-size: 20px;
+   
+    cursor: pointer;
+    
+  }
+  
+  .logo-div {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 5vw;
+    flex: 1;
+    color: #565454;
+  }
+
+.logo-div a{
+  text-decoration: none;
+  color : inherit
+}
+
+
+  .nav-menu {
+    flex: 1.5;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+  }
+  
+  
+  .nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-right: 2vw;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #565454;
+  }
+  
+  nav ul li a:hover{
+   color : #FF4A78 ; 
+   transition: all 0.5s ease-in-out;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .nav-menu{
+      flex: 2;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .hamburger{
+      position: relative;
+      display: inline;
+      z-index: 99;
+      transition: all 0.5s ease-in-out;
+      margin-right: 10px;
+  }
+  
+  .nav-menu{
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    top: 10vh;
+    background-color: #8432C1;
+    clip-path: circle(5vh at 90% -10%);
+    -webkit-clip-path : circle(5vh at 90% -10%);
+    width: 100%;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    z-index: 99;
+  }
+  
+  .line{
+    width: 30px;
+    background-color: gray ;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .open{
+    display: flex;
+    clip-path: circle(100vh at 90% -10%);
+    -webkit-clip-path : circle(100vh at 90% -10%);
+    transition: all 1.2s ease-in-out;
+    opacity: 1;
+    -webkit-transition: all 1.2s ease-in-out;
+    position: absolute;
+    z-index: 99;
+  }
+  
+  
+  .hamburger-open :nth-child(1){
+    transform: rotate(50deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .hamburger-open :nth-child(2){
+    display: none;
+  }
+  
+  .hamburger-open :nth-child(3){
+    transform: rotate(-50deg) translateY(-5px) translateX(6px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 80%;
+      align-items: center;
+    }
+   .nav-menu ul li a{
+     color: white;
+   }
+  }
+  
+
+  @keyframes animation-opcaity {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+
+  
+  /* this is end of stling for navbar */
+  

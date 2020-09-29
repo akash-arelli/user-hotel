@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(122, 122, 122) lightgray;
+  background-color: #ffffff;
+
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #545454;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+}
+
+.App{
+  margin-bottom: 5vh;
+  color:  rgb(75, 75, 75) ;
+  font-family: 'ROBOTO', cursive;
+}
+
+.App-Content {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
